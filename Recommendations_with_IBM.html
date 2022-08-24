@@ -18341,7 +18341,9 @@ Ther percentage of variability captured by the first two components is 10.7%.
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Your response here.</strong>
-The accuracy declined when we increased the latent features for prediction. It suggests there is an overfitting problem. Samples in the test set that can be predicted from the training set was too small, therefore we cannot determine which number of latent feature would be best and whether this method is indeed a good recommendation method. Currently, content-based recommendation may be better. To test this further, we may conduct an A/B testing online, which randomly assign users for (1) recommendations using the matrix factorization method, or for (2) content-based recommendation. The number of user-article interactions per user can be used as evaluation metric.</p>
+The accuracy declined when we increased the latent features for prediction. It suggests there is an overfitting problem. Samples in the test set that can be predicted from the training set was too small, therefore we cannot determine which number of latent feature would be best and whether this method is indeed a good recommendation method. Curretnly, user-based collaborative filtering may be a better option. The next step can be</p>
+<p>a. to test matrix factorization further, we could conduct an A/B testing online, which randomly assign users for (1) recommendations using the matrix factorization method, or for (2) collaborative filtering recommendation. The number of user-article interactions per user can be used as evaluation metric.</p>
+<p>b. develop evaluate content-based recommendation.</p>
 
 </div>
 </div>
