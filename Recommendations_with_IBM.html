@@ -16336,7 +16336,7 @@ The top 10 recommendations for user 20 are the following article names:
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Provide your response here.</strong></p>
+<p><strong>R: We would need to use the funtion get_top_article_ids, since the new user would have not interacted with any articles, thus we cannot use the users interactions to calculate similarities, or provide content-based recommendation based on articles read. However, we can recommend the user to articles with most interactions. However, this is not tailored to the user. A better way may be to use some input from the user and make knowledge-based recommendation.</strong></p>
 
 </div>
 </div>
@@ -16861,18 +16861,11 @@ Ther percentage of variability captured by the first two components is 10.7%.
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are several differences than that in the case of the lesson:</p>
-<ol>
-<li>there is no missing value as all the missing values were treated as 0;</li>
-<li>the dimensions of each u and vt are different, because the number of users and the number of articles(movies) were different.</li>
-<li>the first two components only captured 10% of the variance because the total variation was much larger in this dataset.</li>
-</ol>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Provide your response here.</strong></p>
+<p><strong>R: There are several differences than that in the case of the lesson:</strong>
+<strong>1. the element represent presence of interaction, instead of rating;</strong>
+<strong>2. there is no missing value as all the missing values/no interactions were treated as 0;</strong>
+<strong>3. the dimensions of each u and vt are different, because the number of users and the number of articles(movies) were different.</strong>
+<strong>4. the first two components only captured 10% of the variance because the total variation was much larger in this dataset.</strong></p>
 
 </div>
 </div>
@@ -18340,10 +18333,10 @@ Ther percentage of variability captured by the first two components is 10.7%.
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Your response here.</strong>
-The accuracy declined when we increased the latent features for prediction. It suggests there is an overfitting problem. Samples in the test set that can be predicted from the training set was too small, therefore we cannot determine which number of latent feature would be best and whether this method is indeed a good recommendation method. Curretnly, user-based collaborative filtering may be a better option. The next step can be</p>
-<p>a. to test matrix factorization further, we could conduct an A/B testing online, which randomly assign users for (1) recommendations using the matrix factorization method, or for (2) collaborative filtering recommendation. The number of user-article interactions per user can be used as evaluation metric.</p>
-<p>b. develop evaluate content-based recommendation.</p>
+<p><strong>R:
+The accuracy declined when we increased the latent features for prediction. It suggests there is an overfitting problem. Samples in the test set that can be predicted from the training set was too small, therefore we cannot determine which number of latent feature would be best and whether this method is indeed a good recommendation method. Curretnly, user-based collaborative filtering may be a better option. The next step can be</strong></p>
+<p><strong>a. to test matrix factorization further, we could conduct an A/B testing online, which randomly assign users for (1) recommendations using the matrix factorization method, or for (2) collaborative filtering recommendation. The number of user-article interactions per user can be used as evaluation metric.</strong></p>
+<p><strong>b. develop evaluate content-based recommendation. </strong></p>
 
 </div>
 </div>
